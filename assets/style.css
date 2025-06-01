@@ -1,0 +1,200 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --neutral: hsl(43, 76%, 92%);
+  --theme: hsl(300, 100%, 25%);
+  --theme-dark: hsl(300, 100%, 18%);
+  --counter: hsl(51, 100%, 50%);
+  --font-body: 'Atkinson Hyperlegible', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  --font-strong: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  --main-width: 60em;
+}
+
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  src: url('./fonts/AtkinsonHyperlegibleNext-VariableFont_wght.ttf') format('truetype');
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 1em;  
+  width: 100vw;
+  background-color: var(--neutral);
+}
+
+
+header {
+  width: 100vw;
+  text-align: center;
+  background-color: var(--theme-dark);
+  color: var(--neutral);
+  margin-bottom: 1.5em;
+}
+
+header p {
+  font-size: 2em;
+  /* 
+  padding-bottom: 0.5em;
+   */
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+img.logo {
+  width: 5em;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+
+main {
+  width: var(--main-width);
+  margin: auto;
+}
+
+main p,
+main ul {
+  font-size: 1.5em;
+  padding-bottom: 0.5em;
+}
+
+section#effect {
+  /* margin: 0 auto; */
+  background-color: var(--counter);
+  color: var(--theme);
+  margin: 1.5em;
+
+}
+
+section#effect p {
+  /* width: var(--main-width); */
+  color: var(--counter);
+  background-color: var(--theme);
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.7em 0;
+}
+
+ul#stats {
+  margin: 0 auto;
+  font-family: var(--font-strong);
+  /* width: var(--main-width); */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: flex-start;
+  list-style-type: none;
+  text-transform: uppercase;
+  /* gap: 5px; */
+  font-size: 1em;
+}
+
+ul#stats li {
+  padding: 0.5em;
+  /* border: var(--neutral) 3px solid;
+  border-top: none;
+  border-bottom: none; */
+}
+
+ul#stats li > span {
+  display: block;
+  text-align: center;
+}
+
+ul#stats li span.bignumber {
+  font-size: 5em;
+  font-weight: bold;
+  margin-bottom: -0.15em;
+}
+
+ul#stats li span.bignumber span.unit {
+  font-size: smaller;
+}
+
+ul#stats li span.disability {
+  font-size: 1.5em;
+}
+
+
+div#patterns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1em 0;
+  margin: 2em 0;
+  background-color: white;
+  outline: var(--counter) solid 1px;
+  /* display: none; */
+}
+
+div#patterns img.example {
+  max-width: 25%;
+  align-self: center;
+}
+
+/* 
+details.disability-type {
+  display: inline;
+} */
+ 
+
+section.disability-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-end;
+  gap: 2em;
+  margin-bottom: 0.5em;
+}
+
+details.disability-type summary {
+  font-size: 1.3em;
+  font-style: italic;
+  padding-top: 0.1em;
+} 
+
+h4.disability-type {
+  /* white-space: nowrap; */
+  width: 10em;
+
+}
+
+h2, h3, h4, h5 {
+  padding: 0.5em 0;
+}
+
+h2 {
+  color: var(--theme);
+  font-size: 2.1em;
+}
+
+h3 {
+  color: var(--theme);
+  font-size: 1.8em;
+}
+
+
+h4 {
+  color: var(--theme-dark);
+  font-size: 1.5em;
+}
+
+
+.todo {
+  font-weight: bold;
+  font-style: italic;
+  color: crimson;
+}
+
+ 
