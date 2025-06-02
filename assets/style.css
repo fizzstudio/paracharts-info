@@ -197,4 +197,32 @@ h4 {
   color: crimson;
 }
 
+figure {
+  float: right;
+  margin: 10px;
+  padding-bottom: 2px;
+}
+
+figure img {
+  width: 38em;
+}
+
+figure#querymode img,
+figure#querymode figcaption,
+figure#autodescriptions img,
+figure#autodescriptions figcaption {
+  width: 20em;
+}
+
+h2#solution-paracharts {
+  color: var(--counter);
+  background-color: var(--theme);
+  padding-left: 1em;
+  margin: 1em 0;
+  font-family: 2.5em;
+}
+
+ul {
+  margin-left: 2em;
+}
  

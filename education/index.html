@@ -75,7 +75,7 @@
           <div>
             <p>People with blindness commonly use a screen reader to listen to and explore the contents of a web page, including alt text for images.</p>
 
-            <p>At worst, and all too common, charts have no accessible equivelent… no data table, no alt text.</p>
+            <p>At worst, and all too common, charts have no accessible equivalent… no data table, no alt text.</p>
         
             <p>At best, commercial chart software offers serial access… a disjointed sequence of numbers. For trends, the most accessible software offers sonification, such as music notes of higher or lower pitch based on the value of the data point.</p>
           </div>
@@ -101,7 +101,7 @@
       <section class="disability-type">
         <h4 class="disability-type">Cognitive impairments</h4>
         <details class="disability-type">
-          <summary>People with memory issues, dyslexia, or discalculia may have difficulty reading or interpreting charts.</summary>
+          <summary>People with memory issues, dyslexia, or dyscalculia may have difficulty reading or interpreting charts.</summary>
           <div>
             <p>Cognitive disabilities are widely varied and often difficult to quantify or address. Charts may offer solutions or challenges.</p>
         
@@ -133,15 +133,15 @@
       <p>The challenges for people with disabilities is matched by the challenges for those who create, publish, or teach with charts. How do you make a chart that's accessible for everyone?</p>
 
       <ul>    
-        <li><strong>Data visualization accessibity is uncharted territory.</strong> Web accessibility standards such as WCAG say little about it. There is some informal guidance, but it's often technical and difficult to execute with the charting software at hand.</li>
+        <li><strong>Data visualization accessibility is uncharted territory.</strong> Web accessibility standards such as WCAG say little about it. There is some informal guidance, but it's often technical and difficult to execute with the charting software at hand.</li>
   
-        <li><strong>Curriculum workflows are complex.</strong> Curriculum designers have to navigate complicated workflows to ensure that graphics are accessible; often the people making the graphics aren' the authors of the content, and the disconnect shows.</li>
+        <li><strong>Curriculum workflows are complex.</strong> Curriculum designers have to navigate complicated workflows to ensure that graphics are accessible; often the people making the graphics aren't the authors of the content, and the disconnect shows.</li>
   
-        <li><strong>LMSes are on the hook, but not equipped to solve local issues.</strong> Learning management systems struggle with providing a user interface that aid or enforce teachers in making accesssible charts.</li>
+        <li><strong>LMSes are on the hook, but not equipped to solve local issues.</strong> Learning management systems struggle with providing a user interface that aid or enforce teachers in making accessible charts.</li>
   
         <li><strong>Alt text is hard.</strong> It's technically easy to provide alt text for a static chart, but most people don't know how to write good alt text for charts. And it's impossible to do for dynamic charts from live data. Generative AI text from LLMs isn't consistent or private enough to use in education.</li>
 
-        <li><strong>Chart software is the problem.</strong> Most chart software is not accessible, does not make accessible charts, and isn't flexible enough to allow authors to provide their own accomodations.</li>
+        <li><strong>Chart software is the problem.</strong> Most chart software is not accessible, does not make accessible charts, and isn't flexible enough to allow authors to provide their own accommodations.</li>
       </ul>
 
       <p>The unfortunate reality is that data visualization accessibility is an intricate, niche skill, demanding expertise in data visualizations, user interface design, cognitive load theory, and specialized accessibility best practices, and it needs a custom solution for each different chart type and for each type of disability.</p>
@@ -152,7 +152,7 @@
 
       <h2>Lack of graphicacy</h2>
 
-      <p>Compounding all these difficulties in reading and making charts is that it is a self-perpetuating downward spiral. Because many students with disabilities doen't have access to appropriate accessible graphics, they don't get the value, and never learn to use graphics. This in turn decreases the demand for accessible graphics.</p>
+      <p>Compounding all these difficulties in reading and making charts is that it is a self-perpetuating downward spiral. Because many students with disabilities don't have access to appropriate accessible graphics, they don't get the value, and never learn to use graphics. This in turn decreases the demand for accessible graphics.</p>
 
       <p>Graphicacy, or the ability to understand and present information in a non-textual way, is an increasingly important skill in our society. The lack of graphicacy in the blind community is well-documented.</p>
 
@@ -161,66 +161,88 @@
 
 
     <article>
-      <h2>The solution: ParaCharts</h2>
+      <h2 id="solution-paracharts">The solution: ParaCharts!</h2>
 
-      <p class="todo">stuff here</p>
+      <p>ParaCharts is a new open-core software package designed with accessibility and usability from the ground up. Combining best-of-class accessibility with automated descriptions, ParaCharts redefines what a chart can be.</p>
 
       <h3>Born accessible</h3>
 
-      <p class="todo">stuff here</p>
-
-      <p>Meets WCAG AAA, the highest level, and goes well beyond the standards.</p>
+      <p>ParaCharts meets WCAG AAA, the highest level of guidance, and goes well beyond the standards.</p>
 
       <p>We have all of the conventional accessibility chart features, such as intuitive keyboard support, in-depth serial data exploration, and sonification. We also offer many innovative new features not found elsewhere, like user-centered color control, braille chart display, low vision mode, and more.</p>
 
-      <h3>Automated descriptions</h3>
-      
-      <p class="todo">stuff here</p>
+      <p>Particular care has been taken to apply the principles of Cognitive Load Theory to reduce barriers for understanding the visual meaning of the charts, and to keep the automatic descriptions succinct and accurate.</p>
 
-      <p>For dynamic charts or live data, we produce high-quality automated descriptions with our custom AI. These are not just captions… we automatically annotate the chart at every level, from the whole chart, to each series, to each data point.</p>
+
+      <h3>Automated descriptions</h3>
+
+      <figure id="autodescriptions">
+        <img src="../assets/images/paracharts-autodescription.png" alt="A line chart with an automatically generated description, with the key passage being, 'The lines cluster together, and track each other across the whole chart, with EU above. The lines rise, then fall and stabilize.'">
+        <figcaption>ParaCharts automatically describes the chart, its trends, and important datails for each data point.</figcaption>
+      </figure>
       
+      <p>For dynamic charts or live data, we produce high-quality automated descriptions with our custom AI. These are not just captions… we automatically annotate the chart at every level, from the whole chart, to each series, to each data point.</p>
+
+      <h4>Consistent and concise</h4>
+
+      <p>Our custom machine learning (ML) system works inside the browser to detect patterns and trends in the data. Our Salience Engine determines which of those facts are the most important.</p>
+
+      <p>Because we use traditional ML, not Large Language Models (LLMs), our descriptions for any chart are consistent from session to session, and person to person. This is critical in an educational context.</p>
 
       <h3>Always accessible</h3>
-      
-      <p class="todo">stuff here</p>
-      
+            
       <p>Some other charting software has good accessibility, but it's not on by default, and the publisher has to turn it on, not the end-user. With ParaCharts, accessibility is always on… you can't turn accessibility off.</p>
-
+      
+      <p>So authors and end users can be confident that if they encounter a ParaChart, it's accessible.</p>
 
       <h3>Easy to use</h3>
-
-      <p class="todo">stuff here</p>
-
-      <p>A novice user can simply wrap an HTML data table in a ParaCharts element, specify what chart type they want, and the table is instantly transformed into an accessible chart.</p>
+      
+      <p>A novice user with only basic HTML knowledge can simply wrap a data table in a ParaCharts element, specify what chart type they want, and the table is instantly transformed into an accessible chart.</p>
 
       <p>It's equally easy for technology professionals to use, with JSON manifest files, a flexible API, and expansive customization.</p>
 
-      <p></p>
-
+      <p>Our upcoming authoring tool makes building and designing charts a breeze, with no coding required.</p>
       
-      <h3>Customization and personalization</h3>
+      <figure id="querymode">
+        <img src="../assets/images/ParaCharts-query.jpg" alt="A Venn diagram of the intersection between different learning modalities: reading and writing, speech, visual, auditory, and kinaesthetic. Each mode list different customization features in ParaCharts.">
+        <figcaption>Query mode lets you drill down into more detailed contextual information about data points and their relationships</figcaption>
+      </figure>
 
-      <p class="todo">stuff here</p>
-      
       <h3>Annotation and analysis tools</h3>
 
-      <p class="todo">stuff here</p>
+      <p>Authors can add custom annotations to the charts at any level, enhancing or overriding the automated descriptions to tell their story about the data their own way.</p>
+
+      <p>And so can users! ParaCharts lets end users add notes to data points or series, draw and label analyses on the charts, and share their annotations with others through a rich link (no centralized service required).</p>
+
+      <p>Users can also use data point selection and query mode at the touch of a key to get detailed contextual information about the current selected data points.</p>
       
       <h3>Customization and personalization</h3>
 
-      <p class="todo">stuff here</p>
+      <figure id="multimodal">
+        <img src="../assets/images/multimodal-transparent.png" alt="A Venn diagram of the intersection between different learning modalities: reading and writing, speech, visual, auditory, and kinaesthetic. Each mode list different customization features in ParaCharts.">
+        <figcaption></figcaption>
+      </figure>
 
+      <p>Many people with disabilities have more than one disability. We provide sensible defaults to make our charts as accessible as possible to the widest set of people, and we go further by offering extensive customization options for end-users.</p>
 
+      <p>These customization options include:</p>
+
+      <ul>
+        <li>Custom color palettes for each type of color vision deficiency (color blindness)</li>
+        <li>Darkmode and custom contrast levels</li>
+        <li>A hotkey-triggered low-vision mode</li>
+        <li>Graphical braille output</li>
+        <li>Optional self-voicing</li>
+        <li>… and much more</li>
+      </ul>
 
       <h3>Privacy-centric, ethically developed</h3>
 
-      <p class="todo">stuff here</p>
-
-      <p>All of the AI pattern analysis is done directly in the browser, with no need for any external service… which also means, no cloud subscriptions or hidden costs.</p>
+      <p>All of our AI pattern analysis is done directly in the browser, with no need for any external service… which also means, no cloud subscriptions or hidden costs.</p>
       
-      <p>The AI was all custom developed by the the Fizz Studio team. All of the training data was commissioned specifically for this project, and the trainers with paid above the average rate. There is no IP infringement, and no risk of unforeseen downstream legal impacts on our customers or users.</p>
+      <p>The AI was all custom developed by the the Fizz Studio team. All of the training data was commissioned specifically for this project, and the trainers were paid above the average rate. There is no IP infringement, and no risk of unforeseen downstream legal impacts on our customers or users.</p>
 
-      <p>No data ever leaves the chart… not the publisher's data, and not the user's data, without the user taking steps to send or save it. Our sofware doesn't use cookies or store any personally identifiable information (PII); It does store user preferences locally in the browser, but that information is not collected, and can be changed or cleared by the user.</p>
+      <p>No data ever leaves the chart… not the publisher's data, and not the user's data, without the user taking steps to send or save it. Our software doesn't use cookies or store any personally identifiable information (PII); it does store user preferences locally in the browser, but that information is not collected, and can be changed or cleared by the user.</p>
 
 
       <h3>ParaCharts raises the bar</h3>
