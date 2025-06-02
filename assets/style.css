@@ -199,8 +199,12 @@ h4 {
 
 figure {
   float: right;
-  margin: 10px;
-  padding-bottom: 2px;
+  padding-bottom: 1em;
+}
+
+figure#querymode {
+  float: left;
+  margin-right: 2em;
 }
 
 figure img {
