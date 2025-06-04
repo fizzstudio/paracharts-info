@@ -168,13 +168,23 @@ h4 {
   color: crimson;
 }
 
-figure {
+figure#autodescriptions,
+figure#multimodal {
   float: right;
   padding-bottom: 1em;
 }
 
+figure#autodescriptions {
+  margin-left: 2em;
+}
+
+section#anno-query {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 figure#querymode {
-  float: left;
   margin-right: 2em;
 }
 
