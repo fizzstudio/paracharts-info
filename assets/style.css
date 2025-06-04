@@ -88,6 +88,10 @@ section#effect p {
   padding: 0.7em 0;
 }
 
+ul li {
+  padding-bottom: 0.5em;
+}
+
 ul#stats {
   margin: 0 auto;
   font-family: var(--font-strong);
