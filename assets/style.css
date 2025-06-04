@@ -249,3 +249,10 @@ section.disability-type-grid details summary {
   padding-top: 0.1em;
 } 
 
+details div {
+  padding-top: 0.7em;
+}
+
+article {
+  padding-block: 0.5em;
+}
