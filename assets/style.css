@@ -203,7 +203,8 @@ figure#autodescriptions figcaption {
   width: 20em;
 }
 
-h2#solution-paracharts {
+h2#solution-paracharts,
+h2#conclusion {
   color: var(--counter);
   background-color: var(--theme);
   padding-left: 1em;
