@@ -129,6 +129,48 @@ ul#stats li span.disability {
 }
 
 
+ul#benefits {
+  margin: 0 -10em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  list-style-type: none;
+  font-size: 1em;
+}
+
+ul#benefits li {
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul#benefits li img {
+  width: 5em;
+}
+
+ul#benefits li > span {
+  display: block;
+  text-align: center;
+}
+
+ul#benefits li span.icon_header {
+  color: var(--theme);
+  font-weight: bold;
+  padding-block: 0.4em;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+
+ul#benefits li span.icon_desc {
+  font-size: 1.2em;
+}
+
+
 div#patterns {
   display: flex;
   flex-direction: row;
