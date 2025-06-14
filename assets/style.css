@@ -82,7 +82,7 @@ main ul {
 section#effect {
   background-color: var(--counter);
   color: var(--theme);
-  margin-block: 1.5em;
+  /* margin-block: 1.5em; */
 }
 
 section#effect p {
@@ -326,3 +326,11 @@ article {
   margin-block: 0.5em;
   margin-top: 3em;
 }
+
+article#intro,
+article#intro h2,
+article#intro p,
+article#effect-infoblock {
+  margin-block: 0;
+}
+
