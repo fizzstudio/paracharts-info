@@ -14,6 +14,10 @@
   --font-body: 'Atkinson Hyperlegible', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   --font-strong: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   --main-width: 60em;
+  --extended-width: 80em;
+  --cellMin: 12em;
+  /* --sixpack: calc(var(--cellMin) * 6); */
+  container-type: inline-size;
 }
 
 @font-face {
@@ -25,6 +29,7 @@ body {
   font-family: var(--font-body);
   font-size: 1em;
   background-color: var(--neutral);
+  text-align: justify;
 }
 
 
@@ -38,6 +43,7 @@ footer {
 
 header {
   margin-bottom: 1.5em;
+  padding-block: 4em;
 }
 
 header p,
@@ -49,6 +55,7 @@ h1 {
   font-size: 3em;
   font-weight: bold;
 }
+
 
 img.logo {
   width: 5em;
@@ -69,14 +76,13 @@ main {
 main p,
 main ul {
   font-size: 1.5em;
-  padding-bottom: 0.5em;
+  padding-bottom: 0.8em;
 }
 
 section#effect {
   background-color: var(--counter);
   color: var(--theme);
   margin-block: 1.5em;
-
 }
 
 section#effect p {
@@ -99,6 +105,7 @@ ul#stats {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  align-items: flex-start;
   align-content: flex-start;
   list-style-type: none;
   text-transform: uppercase;
@@ -128,24 +135,30 @@ ul#stats li span.disability {
   font-size: 1.5em;
 }
 
-
 ul#benefits {
-  margin: 0 -10em;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  align-content: flex-start;
-  list-style-type: none;
   font-size: 1em;
+  margin-top: 2em;
+  max-width: calc((var(--cellMin) * 4) - 1em);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--cellMin), 1fr));
+  gap: 0.5em;
 }
 
+/* @container (width > var(--sixpack)) { */
+@container (width > 75em) {
+  ul#benefits {
+    margin-inline: -10em;
+    max-width: var(--extended-width);
+    /* background-color: aliceblue; */
+  }
+} 
+
 ul#benefits li {
-  padding: 0.5em;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
+  /* outline: black solid 1px; */
 }
 
 ul#benefits li img {
@@ -214,8 +227,7 @@ h4 {
   color: crimson;
 }
 
-figure#autodescriptions,
-figure#multimodal {
+figure#autodescriptions {
   float: right;
   padding-bottom: 1em;
 }
@@ -228,6 +240,20 @@ section#anno-query {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+section#multimodal_group {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-items: center;
+
+  gap: 1em;
+  text-align: start;
+}
+
+figure#multimodal img {
+  width: 40em;
 }
 
 figure#querymode {
@@ -297,5 +323,6 @@ details div {
 }
 
 article {
-  padding-block: 0.5em;
+  margin-block: 0.5em;
+  margin-top: 3em;
 }
