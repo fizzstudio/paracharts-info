@@ -273,12 +273,26 @@ figure#autodescriptions figcaption {
 }
 
 h2#solution-paracharts,
-h2#conclusion {
+div#conclusion-block {
+/* h2#conclusion { */
   color: var(--counter);
   background-color: var(--theme);
-  padding-left: 1em;
+  padding-inline: 1em;
   margin: 1em -1.5em;
   font-family: 2.5em;
+}
+
+div#conclusion-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+div#conclusion-block h2 {
+  color: var(--counter); 
+}
+
+div#conclusion-block img {
+  width: 4em; 
 }
 
 ul {
